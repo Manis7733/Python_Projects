@@ -20,4 +20,7 @@ def alarm(seconds):
 
     playsound("warning.mp3")
 
-alarm(10)
+minutes = int(input("How many minutes to wait: "))
+seconds = int(input("How many seconds to wait: "))
+total_seconds = minutes * 60 + seconds
+alarm(total_seconds)
